@@ -40,14 +40,19 @@ const Home = () => {
           value={current}
           onChange={handleInput}
           onClick={handleStartTyping}
-          className="resize-none text-lg absolute w-full  border-none outline-none bg-transparent z-10 text-transparent"
+          spellCheck="false"
+          className={`resize-none text-lg absolute w-full  border-none outline-none ${
+            startTyping
+              ? "bg-transparent"
+              : "bg-gradient-to-tr opacity-10 from-gray-950/100 to-gray-950 via-gray-950"
+          } z-10 text-transparent`}
         ></textarea>
-        <p className="text-lg absolute text-gray-300">
+        <p className="text-lg absolute text-gray-600">
           {[...current].map((character, index) => {
             return (
               <span
                 className={`${
-                  character != text[index] ? "text-red-800" : "text-green-900"
+                  character != text[index] ? "text-red-500" : "text-white"
                 }`}
               >
                 {text[index]}
