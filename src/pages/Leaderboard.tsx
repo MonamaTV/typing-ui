@@ -1,9 +1,9 @@
 const Leaderboard = () => {
   return (
     <div className="my-4 text-white">
-      <div className="border border-gray-900 rounded-lg flex flex-col p-10">
+      <div className=" border-gray-900 rounded-lg flex flex-col p-10">
         <h4 className="flex flex-col justify-center mr-10">Leaderboard</h4>
-        <small>The current leaderboards... (up to date)</small>
+        <small>The current leaders... (up to date)</small>
       </div>
       <div className=" px-10">
         <table className="my-2 w-full  border-separate border-spacing-y-3 border-spacing-x-0">
